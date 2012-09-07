@@ -1,0 +1,47 @@
+# Define the exports for the prx
+PSP_BEGIN_EXPORTS
+
+# These four lines are mandatory (although you can add other functions like module_stop)
+# syslib is a psynonym for the single mandatory export.
+PSP_EXPORT_START(syslib, 0, 0x8000)
+PSP_EXPORT_FUNC_HASH(module_start)
+PSP_EXPORT_VAR_HASH(module_info)
+PSP_EXPORT_END
+
+# Export our functions
+PSP_EXPORT_START(PGE Math, 0, 0x0001)
+PSP_EXPORT_FUNC_HASH(pgeMathAtan)
+PSP_EXPORT_FUNC_HASH(pgeMathAtan2)
+PSP_EXPORT_FUNC_HASH(pgeMathCos)
+PSP_EXPORT_FUNC_HASH(pgeMathSin)
+PSP_EXPORT_FUNC_HASH(pgeMathAcos)
+PSP_EXPORT_FUNC_HASH(pgeMathAsin)
+PSP_EXPORT_FUNC_HASH(pgeMathCosh)
+PSP_EXPORT_FUNC_HASH(pgeMathExp)
+PSP_EXPORT_FUNC_HASH(pgeMathFmax)
+PSP_EXPORT_FUNC_HASH(pgeMathFmin)
+PSP_EXPORT_FUNC_HASH(pgeMathFmod)
+PSP_EXPORT_FUNC_HASH(pgeMathLog)
+PSP_EXPORT_FUNC_HASH(pgeMathPow)
+PSP_EXPORT_FUNC_HASH(pgeMathSrand)
+PSP_EXPORT_FUNC_HASH(pgeMathRandFloat)
+PSP_EXPORT_FUNC_HASH(pgeMathSincos)
+PSP_EXPORT_FUNC_HASH(pgeMathSinh)
+PSP_EXPORT_FUNC_HASH(pgeMathTan)
+PSP_EXPORT_FUNC_HASH(pgeMathTanh)
+PSP_EXPORT_FUNC_HASH(pgeMathSqrt)
+PSP_EXPORT_FUNC_HASH(pgeMathRandInt)
+PSP_EXPORT_FUNC_HASH(pgeMathAbs)
+PSP_EXPORT_FUNC_HASH(pgeMathCeil)
+PSP_EXPORT_FUNC_HASH(pgeMathFloor)
+PSP_EXPORT_FUNC_HASH(pgeMathLog2)
+PSP_EXPORT_FUNC_HASH(pgeMathLog10)
+PSP_EXPORT_FUNC_HASH(pgeMathPow2)
+PSP_EXPORT_FUNC_HASH(pgeMathRound)
+PSP_EXPORT_FUNC_HASH(pgeMathTrunc)
+PSP_EXPORT_FUNC_HASH(pgeMathInvSqrt)
+PSP_EXPORT_FUNC_HASH(pgeMathDegToRad)
+PSP_EXPORT_FUNC_HASH(pgeMathRadToDeg)
+PSP_EXPORT_END
+
+PSP_END_EXPORTS

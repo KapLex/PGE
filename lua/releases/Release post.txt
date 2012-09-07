@@ -1,0 +1,84 @@
+Phoenix Game Engine (PGE) is a fully featured engine for game development written by InsertWittyName and MK2k.
+
+PGE Lua is the Lua wrapper of that engine.
+
+[b]-= FEATURES =-[/b]
+
+pge.controls - Handling button and analog input.
+pge.dir - Directory access and file system operations that deal with directories.
+pge.file - File access and file system operations that deal with files.
+pge.font - TrueType font loading and drawing.
+pge.gfx - Graphic primitives drawing.
+pge.math - VFPU math module.
+pge.mp3 - MP3 playback for background music.
+pge.net - Net and socket functions.
+pge.texture - Image loading and drawing.
+pge.timer - Timer module.
+pge.usb - USB functions.
+pge.utils - Utility functions for using the dialogs and retrieving system information.
+pge.wav - WAV loading and playback for sound effects.
+pge.zip - ZIP file access and extraction.
+
+PGE Lua uses a port of the latest Lua release 5.1.4, which has been optimised specifically for the PSP.
+
+PGE Lua comes with 23 fully commented samples demonstrating how each module is used.
+
+Alongside that, full documentation is available via the homepage: http://pge.luaplayer.org/
+
+There is an emulator for PGE Lua which runs on Windows, Linux, OSX and allows PSP-less development. This is almost complete and will be released at that time.
+
+[b]-= VIDEOS =-[/b]
+
+Low resolution: http://www.youtube.com/watch?v=MT-9HJlmWkE
+
+[b]-= INSTALL =-[/b]
+
+Copy the 'pgelua' folder to PSP/GAMEXXX/ (or PSP/GAME/ if your kernel is set to 3xx/4xx in the recovery menu).
+
+[b]-= KNOWN ISSUES =-[/b]
+
+None as of this writing. With this being an initial release I would expect there to be a few undiscovered bugs. Let us know.
+
+[b]-= HOMEPAGE =-[/b]
+
+http://pge.luaplayer.org/
+
+[b]-= CONTACT =-[/b]
+
+tias_dp@hotmail.com
+
+[b]-= DOWNLOAD =-[/b]
+
+http://pge.luaplayer.org/lua/downloads/pgelua_001.zip
+
+[b]-= CREDITS & GREETS =-[/b]
+
+Coded in pure C and asm using the homebrew PSPSDK.
+
+Thanks to TyRaNiD for psplink, which was used extensively in debugging.
+
+Thanks to all in #psp-programming on freenode.net, where quality homebrew is produced. Special thanks to those in #lua who know so much about Lua it scares me.
+
+Personal thanks to romero126 and Soulkiller, who tested, provided feedback and helped me steer PGE Lua to where it is.
+
+Massive thanks to Raphael and Tomaz - the work we did on triEngine helped me really understand what an engine is.
+
+Biggest thanks to MK2k for joining the project midway through development and making it much more than I ever expected.
+
+[b]-= NOTES =-[/b]
+
+Please be aware that this is not Lua Player.
+
+PGE Lua is it's own product and shares zero code with Lua Player.
+
+For the C developers, the C API of Phoenix Engine will be released in due course, shortly.
+
+PGE has been in development for over a year, it's not some mis-match of code copied from other people. This is the real deal.
+
+There are lots more plans in store for PGE and PGE Lua, a roadmap will be released shortly showing the expected development.
+
+[b]-= SUPPORT =-[/b]
+
+For further help that is not supplied by the samples or documentation, there are forums for PGE at http://pge.luaplayer.org/.
+
+We are also on IRC, channel #psp-programming on irc.freenode.net, for one-to-one help.

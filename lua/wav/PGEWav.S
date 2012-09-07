@@ -1,0 +1,16 @@
+	.set noreorder
+
+#include "pspstub.s"
+
+	STUB_START "PGEWav",0x00090000,0x000A0005
+	STUB_FUNC  0x089577B4,pgeWavLoad
+	STUB_FUNC  0x9740E614,pgeWavLoadMemory
+	STUB_FUNC  0x73F0E327,pgeWavPlay
+	STUB_FUNC  0x01D63D99,pgeWavStop
+	STUB_FUNC  0x82F02468,pgeWavStopAll
+	STUB_FUNC  0x69E25E4C,pgeWavIsPlaying
+	STUB_FUNC  0xA12DA8DC,pgeWavLoop
+	STUB_FUNC  0xE7ACD568,pgeWavVolume
+	STUB_FUNC  0x24671793,pgeWavPitch
+	STUB_FUNC  0x13261FEB,pgeWavDestroy
+	STUB_END

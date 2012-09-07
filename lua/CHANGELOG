@@ -1,0 +1,44 @@
+CHANGELOG
+
+- 0.03
+Fixed pge.texture.load() so that textures less than 16x8 are swizzled correctly (reported by romero126).
+Fixed pge.math.deg() and pge.math.rad(), they were the wrong way around (reported by romero126).
+Added pge.gfx.transparent() to set or unset the color to be deemed as transparent.
+Fixed pge.texture.load() which crashed when attempting to load images not in the PNG format (reported by TheUnderminer).
+Moved non-dialog functions from pge.utils to pge.system (suggested by romero126).
+Added pge.system.battery functions.
+Added pge.system.cpu() to set the CPU (PLL, BUS) frequency.
+Fixed pge.controls.pressed() and pge.controls.released(). The flags were being reset when the key was read by the user, instead of at the next update (reported by DarkWolfNine).
+Added all the separate parts as external modules. The user loads only what they need (using pge.require).
+Added pge.require() to load pge modules.
+Fixed pge.wav to play a wider variety of WAV files (crashing bug reported by DarkWolfNine).
+Added initial options via pge.ini file.
+Added ability to set whether the browser is used or not via pge.ini. This can give the program a considerable amount of extra memory (approx. 6MB) if the browser is not to be used.
+Fixed the restart of the EBOOT on error (reported by TheUnderminer & romero126).
+Fixed a potential buffer overflow in internal Lua functions that called pge.system.psid().
+Added pge.adhoc module (see documentation for further details).
+Added UTF-8 support to pge.font.
+
+- 0.02
+Added pge.exit() to explicitely exit at any time.
+Fixed pge.texture.draw() to only allow the correct number of parameters to be passed (reported by #Gianni#).
+Added pge.texture.swizzle() to swizzle a texture.
+Added pge.texture.unswizzle() to unswizzle a texture.
+Added an optional parameter to pge.texture.load() and pge.texture.loadmemory() to specify whether to swizzle the texture on load.
+Added pge.texture.pixel() to get or set the color value of a pixel within a texture.
+Added an error check to pge.file.read(), returns nil if nothing could be read.
+Added an error check to pge.file.readnum(), returns nil if the number could not be read.
+Added a return value to pge.file.write(), returns the number of bytes written.
+Fixed pge.mp3.loadmemory() which incorrectly checked for two parameters to be passed when it only requires one (reported by TheUnderminer).
+Added pge.math.deg() to convert radians to degrees.
+Added pge.math.rad() to convert degrees to radians.
+Moved the socket functions to pge.net.socket.function() to give a layer of separation.
+Moved the socketset functions to pge.net.socketset.function() to give a layer of separation.
+Added an optional parameter to pge.net.socket.receive(), to specify how many bytes to receive.
+Fixed pge.texture.save() to unswizzle the texture before saving, then re-swizzle if needed.
+Added pge.wav.volume() to set volume.
+Added pge.wav.pitch() to change the pitch.
+Added pge.wav.data() to access the raw wav data.
+
+- 0.01
+Initial release

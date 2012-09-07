@@ -1,0 +1,20 @@
+# To generate .S file:
+#    psp-build-exports -s file.exp
+# Define the exports for the prx
+PSP_BEGIN_EXPORTS
+
+# These four lines are mandatory (although you can add other functions like module_stop)
+# syslib is a psynonym for the single mandatory export.
+PSP_EXPORT_START(syslib, 0, 0x8000)
+PSP_EXPORT_FUNC_HASH(module_start)
+PSP_EXPORT_VAR_HASH(module_info)
+PSP_EXPORT_END
+
+# Export our function
+PSP_EXPORT_START(pgesupport, 0, 0x4001)
+PSP_EXPORT_FUNC(pgeSupportLoadStartModule)
+PSP_EXPORT_FUNC(pgeSupportStopUnloadModule)
+PSP_EXPORT_FUNC(pgeSupportExecEboot)
+PSP_EXPORT_END
+
+PSP_END_EXPORTS

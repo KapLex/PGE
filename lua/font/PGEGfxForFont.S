@@ -1,0 +1,18 @@
+	.set noreorder
+
+#include "pspstub.s"
+
+	STUB_START "PGEGfx",0x00090000,0x000C0005
+	STUB_FUNC  0x3BA5C5CC,sceGuTexFilter
+	STUB_FUNC  0xCCCC2EDC,sceGuGetMemory
+	STUB_FUNC  0x0F2615A4,sceGuColor
+	STUB_FUNC  0x5071E27A,sceGuDrawArray
+	STUB_FUNC  0x050A7EB0,sceGuClutMode
+	STUB_FUNC  0x29631777,sceGuClutLoad
+	STUB_FUNC  0x7E0EADDE,sceGuEnable
+	STUB_FUNC  0x3A4D566B,sceGuTexMode
+	STUB_FUNC  0x7E5AED26,sceGuTexImage
+	STUB_FUNC  0x16AB1034,sceGuTexFunc
+	STUB_FUNC  0xB07562AB,sceGuTexOffset
+	STUB_FUNC  0x8053C305,sceGuTexWrap
+	STUB_END

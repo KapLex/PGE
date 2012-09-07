@@ -1,0 +1,29 @@
+# Define the exports for the prx
+PSP_BEGIN_EXPORTS
+
+# These four lines are mandatory (although you can add other functions like module_stop)
+# syslib is a psynonym for the single mandatory export.
+PSP_EXPORT_START(syslib, 0, 0x8000)
+PSP_EXPORT_FUNC_HASH(module_start)
+PSP_EXPORT_VAR_HASH(module_info)
+PSP_EXPORT_END
+
+# Export our functions
+PSP_EXPORT_START(PGE Utils, 0, 0x0001)
+PSP_EXPORT_FUNC_HASH(pgeUtilsNetDialogInit)
+PSP_EXPORT_FUNC_HASH(pgeUtilsNetDialogUpdate)
+PSP_EXPORT_FUNC_HASH(pgeUtilsBrowserInit)
+PSP_EXPORT_FUNC_HASH(pgeUtilsBrowserUpdate)
+PSP_EXPORT_FUNC_HASH(pgeUtilsAdhocDialogInit)
+PSP_EXPORT_FUNC_HASH(pgeUtilsAdhocDialogUpdate)
+PSP_EXPORT_FUNC_HASH(pgeUtilsMsgDialogInit)
+PSP_EXPORT_FUNC_HASH(pgeUtilsMsgDialogErrorInit)
+PSP_EXPORT_FUNC_HASH(pgeUtilsMsgDialogUpdate)
+PSP_EXPORT_FUNC_HASH(pgeUtilsMsgDialogAbort)
+PSP_EXPORT_FUNC_HASH(pgeUtilsOskInit)
+PSP_EXPORT_FUNC_HASH(pgeUtilsOskUpdate)
+PSP_EXPORT_FUNC_HASH(pgeUtilsSavedataInit)
+PSP_EXPORT_FUNC_HASH(pgeUtilsSavedataUpdate)
+PSP_EXPORT_END
+
+PSP_END_EXPORTS

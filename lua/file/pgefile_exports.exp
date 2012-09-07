@@ -1,0 +1,28 @@
+# Define the exports for the prx
+PSP_BEGIN_EXPORTS
+
+# These four lines are mandatory (although you can add other functions like module_stop)
+# syslib is a psynonym for the single mandatory export.
+PSP_EXPORT_START(syslib, 0, 0x8000)
+PSP_EXPORT_FUNC_HASH(module_start)
+PSP_EXPORT_VAR_HASH(module_info)
+PSP_EXPORT_END
+
+# Export our functions
+PSP_EXPORT_START(PGE File, 0, 0x0001)
+PSP_EXPORT_FUNC_HASH(pgeFileOpen)
+PSP_EXPORT_FUNC_HASH(pgeFileOpenAsync)
+PSP_EXPORT_FUNC_HASH(pgeFileOpenMemory)
+PSP_EXPORT_FUNC_HASH(pgeFileClose)
+PSP_EXPORT_FUNC_HASH(pgeFileSeek)
+PSP_EXPORT_FUNC_HASH(pgeFileRead)
+PSP_EXPORT_FUNC_HASH(pgeFileWrite)
+PSP_EXPORT_FUNC_HASH(pgeFileTell)
+PSP_EXPORT_FUNC_HASH(pgeFileRewind)
+PSP_EXPORT_FUNC_HASH(pgeFileSize)
+PSP_EXPORT_FUNC_HASH(pgeFileRemove)
+PSP_EXPORT_FUNC_HASH(pgeFileRename)
+PSP_EXPORT_FUNC_HASH(pgeFileExists)
+PSP_EXPORT_END
+
+PSP_END_EXPORTS

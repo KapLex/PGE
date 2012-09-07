@@ -1,0 +1,25 @@
+# Define the exports for the prx
+PSP_BEGIN_EXPORTS
+
+# These four lines are mandatory (although you can add other functions like module_stop)
+# syslib is a psynonym for the single mandatory export.
+PSP_EXPORT_START(syslib, 0, 0x8000)
+PSP_EXPORT_FUNC_HASH(module_start)
+PSP_EXPORT_VAR_HASH(module_info)
+PSP_EXPORT_END
+
+# Export our functions
+PSP_EXPORT_START(PGE Wav, 0, 0x0001)
+PSP_EXPORT_FUNC_HASH(pgeWavLoad)
+PSP_EXPORT_FUNC_HASH(pgeWavLoadMemory)
+PSP_EXPORT_FUNC_HASH(pgeWavPlay)
+PSP_EXPORT_FUNC_HASH(pgeWavStop)
+PSP_EXPORT_FUNC_HASH(pgeWavStopAll)
+PSP_EXPORT_FUNC_HASH(pgeWavIsPlaying)
+PSP_EXPORT_FUNC_HASH(pgeWavLoop)
+PSP_EXPORT_FUNC_HASH(pgeWavVolume)
+PSP_EXPORT_FUNC_HASH(pgeWavPitch)
+PSP_EXPORT_FUNC_HASH(pgeWavDestroy)
+PSP_EXPORT_END
+
+PSP_END_EXPORTS

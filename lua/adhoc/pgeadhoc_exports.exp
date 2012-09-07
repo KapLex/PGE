@@ -1,0 +1,35 @@
+# Define the exports for the prx
+PSP_BEGIN_EXPORTS
+
+# These four lines are mandatory (although you can add other functions like module_stop)
+# syslib is a psynonym for the single mandatory export.
+PSP_EXPORT_START(syslib, 0, 0x8000)
+PSP_EXPORT_FUNC_HASH(module_start)
+PSP_EXPORT_VAR_HASH(module_info)
+PSP_EXPORT_END
+
+# Export our functions
+PSP_EXPORT_START(PGE Adhoc, 0, 0x0001)
+PSP_EXPORT_FUNC_HASH(pgeAdhocInit)
+PSP_EXPORT_FUNC_HASH(pgeAdhocShutdown)
+PSP_EXPORT_FUNC_HASH(pgeAdhocConnect)
+PSP_EXPORT_FUNC_HASH(pgeAdhocGetState)
+PSP_EXPORT_FUNC_HASH(pgeAdhocGetError)
+PSP_EXPORT_FUNC_HASH(pgeAdhocPeerExists)
+PSP_EXPORT_FUNC_HASH(pgeAdhocMatchingInit)
+PSP_EXPORT_FUNC_HASH(pgeAdhocMatchingStart)
+PSP_EXPORT_FUNC_HASH(pgeAdhocMatchingAccept)
+PSP_EXPORT_FUNC_HASH(pgeAdhocMatchingDecline)
+PSP_EXPORT_FUNC_HASH(pgeAdhocMatchingShutdown)
+PSP_EXPORT_FUNC_HASH(pgeAdhocMatchingGetEvents)
+PSP_EXPORT_FUNC_HASH(pgeAdhocPtpHostStart)
+PSP_EXPORT_FUNC_HASH(pgeAdhocPtpClientStart)
+PSP_EXPORT_FUNC_HASH(pgeAdhocPtpSend)
+PSP_EXPORT_FUNC_HASH(pgeAdhocPtpReceive)
+PSP_EXPORT_FUNC_HASH(pgeAdhocPtpFlush)
+PSP_EXPORT_FUNC_HASH(pgeAdhocPtpHostShutdown)
+PSP_EXPORT_FUNC_HASH(pgeAdhocPtpClientShutdown)
+
+PSP_EXPORT_END
+
+PSP_END_EXPORTS

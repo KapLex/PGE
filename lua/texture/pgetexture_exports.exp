@@ -1,0 +1,32 @@
+# Define the exports for the prx
+PSP_BEGIN_EXPORTS
+
+# These four lines are mandatory (although you can add other functions like module_stop)
+# syslib is a psynonym for the single mandatory export.
+PSP_EXPORT_START(syslib, 0, 0x8000)
+PSP_EXPORT_FUNC_HASH(module_start)
+PSP_EXPORT_VAR_HASH(module_info)
+PSP_EXPORT_END
+
+# Export our functions
+PSP_EXPORT_START(PGE Texture, 0, 0x0001)
+PSP_EXPORT_FUNC_HASH(pgeTextureDestroy)
+PSP_EXPORT_FUNC_HASH(pgeTextureLoad)
+PSP_EXPORT_FUNC_HASH(pgeTextureLoadMemory)
+PSP_EXPORT_FUNC_HASH(pgeTextureCreate)
+PSP_EXPORT_FUNC_HASH(pgeTextureActivate)
+PSP_EXPORT_FUNC_HASH(pgeGfxDrawTexture)
+PSP_EXPORT_FUNC_HASH(pgeGfxDrawTextureEasy)
+PSP_EXPORT_FUNC_HASH(pgeGfxRenderToTexture)
+PSP_EXPORT_FUNC_HASH(pgeTextureSave)
+PSP_EXPORT_FUNC_HASH(pgeTextureScreenshot)
+PSP_EXPORT_FUNC_HASH(pgeTextureModeSet)
+PSP_EXPORT_FUNC_HASH(pgeTextureToRam)
+PSP_EXPORT_FUNC_HASH(pgeTextureToVram)
+PSP_EXPORT_FUNC_HASH(pgeTextureSwizzle)
+PSP_EXPORT_FUNC_HASH(pgeTextureUnswizzle)
+PSP_EXPORT_FUNC_HASH(pgeTextureSetPixel)
+PSP_EXPORT_FUNC_HASH(pgeTextureGetPixel)
+PSP_EXPORT_END
+
+PSP_END_EXPORTS

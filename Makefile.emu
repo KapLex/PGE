@@ -1,0 +1,26 @@
+OUTPUT = pge
+VERSION = 3
+
+OBJS = main.o pgeEmulator.o pgeControls.o pgeGfx.o pgeTexture.o pgeTimer.o pgeWav.o pgeMp3.o pgeFont.o pgeUtils.o pgeFile.o pgeDir.o pgeNet.o pgeObj.o pge.o
+
+CFLAGS = -O2 -Wall -g $(shell sdl-config --cflags) $(shell freetype-config --cflags) -D_PSP_FW_VERSION=340 -DPGE_VERSION=$(VERSION)
+
+CFLAGS += -I/usr/include -I$(PSPDEV)/psp/sdk/include 
+
+LDFLAGS = $(shell sdl-config --libs) $(shell freetype-config --libs) -lpng -lz -lm
+
+ifeq ($(shell uname), Darwin)
+	LDFLAGS += -Wl,-framework,OpenGL
+endif
+ifeq ($(shell uname), Linux)
+	LDFLAGS += -lGL -lGLU
+endif
+ifeq ($(shell uname), Cygwin)
+	LDFLAGS += -lopengl32
+endif
+
+$(OUTPUT): $(OBJS)
+	$(CC) -o $@ $^ $(LDFLAGS)
+
+clean:
+	rm -f $(OUTPUT) *.o

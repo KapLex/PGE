@@ -1,0 +1,45 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+rankdir=LR;
+  Node1 [label="C:/cygwin/home/Dave/projects/pge/pge.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize=10,style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="pgeAt3.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pge_at3_8h.html"];
+  Node1 -> Node3 [color="midnightblue",fontsize=10,style="solid",fontname="FreeSans.ttf"];
+  Node3 [label="pgeWav.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pge_wav_8h.html"];
+  Node1 -> Node4 [color="midnightblue",fontsize=10,style="solid",fontname="FreeSans.ttf"];
+  Node4 [label="pgeTimer.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pge_timer_8h.html"];
+  Node1 -> Node5 [color="midnightblue",fontsize=10,style="solid",fontname="FreeSans.ttf"];
+  Node5 [label="pgeMath.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pge_math_8h.html"];
+  Node5 -> Node6 [color="midnightblue",fontsize=10,style="solid",fontname="FreeSans.ttf"];
+  Node6 [label="psptypes.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node7 [color="midnightblue",fontsize=10,style="solid",fontname="FreeSans.ttf"];
+  Node7 [label="pgeVfpu.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pge_vfpu_8h.html"];
+  Node1 -> Node8 [color="midnightblue",fontsize=10,style="solid",fontname="FreeSans.ttf"];
+  Node8 [label="pgeVram.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pge_vram_8h.html"];
+  Node1 -> Node9 [color="midnightblue",fontsize=10,style="solid",fontname="FreeSans.ttf"];
+  Node9 [label="pgeFont.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pge_font_8h.html"];
+  Node9 -> Node10 [color="midnightblue",fontsize=10,style="solid",fontname="FreeSans.ttf"];
+  Node10 [label="ft2build.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node9 -> Node11 [color="midnightblue",fontsize=10,style="solid",fontname="FreeSans.ttf"];
+  Node11 [label="pgeTexture.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pge_texture_8h.html"];
+  Node1 -> Node12 [color="midnightblue",fontsize=10,style="solid",fontname="FreeSans.ttf"];
+  Node12 [label="pgeNet.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pge_net_8h.html"];
+  Node12 -> Node13 [color="midnightblue",fontsize=10,style="solid",fontname="FreeSans.ttf"];
+  Node13 [label="psputility.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node14 [color="midnightblue",fontsize=10,style="solid",fontname="FreeSans.ttf"];
+  Node14 [label="pgeControls.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pge_controls_8h.html"];
+  Node1 -> Node15 [color="midnightblue",fontsize=10,style="solid",fontname="FreeSans.ttf"];
+  Node15 [label="pgeLog.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pge_log_8h.html"];
+  Node1 -> Node16 [color="midnightblue",fontsize=10,style="solid",fontname="FreeSans.ttf"];
+  Node16 [label="pgeGfx.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pge_gfx_8h.html"];
+  Node16 -> Node17 [color="midnightblue",fontsize=10,style="solid",fontname="FreeSans.ttf"];
+  Node17 [label="pspgu.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node16 -> Node11 [color="midnightblue",fontsize=10,style="solid",fontname="FreeSans.ttf"];
+  Node1 -> Node11 [color="midnightblue",fontsize=10,style="solid",fontname="FreeSans.ttf"];
+  Node1 -> Node18 [color="midnightblue",fontsize=10,style="solid",fontname="FreeSans.ttf"];
+  Node18 [label="pgeMemory.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pge_memory_8h.html"];
+  Node18 -> Node19 [color="midnightblue",fontsize=10,style="solid",fontname="FreeSans.ttf"];
+  Node19 [label="malloc.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

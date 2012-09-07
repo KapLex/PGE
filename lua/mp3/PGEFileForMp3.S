@@ -1,0 +1,19 @@
+	.set noreorder
+
+#include "pspstub.s"
+
+	STUB_START "PGEFile",0x00090000,0x000D0005
+	STUB_FUNC  0xD8CBC13E,pgeFileOpen
+	STUB_FUNC  0xD86D1AFD,pgeFileOpenAsync
+	STUB_FUNC  0xA3328395,pgeFileOpenMemory
+	STUB_FUNC  0x59206796,pgeFileClose
+	STUB_FUNC  0x6BD13ACF,pgeFileSeek
+	STUB_FUNC  0x3E648839,pgeFileRead
+	STUB_FUNC  0x8A850816,pgeFileWrite
+	STUB_FUNC  0x4072589A,pgeFileTell
+	STUB_FUNC  0xD7D18424,pgeFileRewind
+	STUB_FUNC  0x2749B01D,pgeFileSize
+	STUB_FUNC  0xE93B8672,pgeFileRemove
+	STUB_FUNC  0xFB5B46B8,pgeFileRename
+	STUB_FUNC  0xDE74543A,pgeFileExists
+	STUB_END

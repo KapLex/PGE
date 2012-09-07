@@ -1,0 +1,38 @@
+# Define the exports for the prx
+PSP_BEGIN_EXPORTS
+
+# These four lines are mandatory (although you can add other functions like module_stop)
+# syslib is a psynonym for the single mandatory export.
+PSP_EXPORT_START(syslib, 0, 0x8000)
+PSP_EXPORT_FUNC_HASH(module_start)
+PSP_EXPORT_VAR_HASH(module_info)
+PSP_EXPORT_END
+
+# Export our functions
+PSP_EXPORT_START(PGE Net, 0, 0x0001)
+PSP_EXPORT_FUNC_HASH(pgeNetInit)
+PSP_EXPORT_FUNC_HASH(pgeNetShutdown)
+PSP_EXPORT_FUNC_HASH(pgeNetGetFile)
+PSP_EXPORT_FUNC_HASH(pgeNetPostForm)
+PSP_EXPORT_FUNC_HASH(pgeNetSwitchStatus)
+PSP_EXPORT_FUNC_HASH(pgeNetDisconnect)
+PSP_EXPORT_FUNC_HASH(pgeNetIsConnected)
+PSP_EXPORT_FUNC_HASH(pgeNetGetLocalIp)
+PSP_EXPORT_FUNC_HASH(pgeNetResolveHost)
+PSP_EXPORT_FUNC_HASH(pgeNetSocketCreate)
+PSP_EXPORT_FUNC_HASH(pgeNetSocketAccept)
+PSP_EXPORT_FUNC_HASH(pgeNetSocketBind)
+PSP_EXPORT_FUNC_HASH(pgeNetSocketListen)
+PSP_EXPORT_FUNC_HASH(pgeNetSocketConnect)
+PSP_EXPORT_FUNC_HASH(pgeNetSocketSend)
+PSP_EXPORT_FUNC_HASH(pgeNetSocketReceive)
+PSP_EXPORT_FUNC_HASH(pgeNetSocketClose)
+PSP_EXPORT_FUNC_HASH(pgeNetSocketSetClear)
+PSP_EXPORT_FUNC_HASH(pgeNetSocketSetAdd)
+PSP_EXPORT_FUNC_HASH(pgeNetSocketSetClear)
+PSP_EXPORT_FUNC_HASH(pgeNetSocketSetRemove)
+PSP_EXPORT_FUNC_HASH(pgeNetSocketSetIsMember)
+PSP_EXPORT_FUNC_HASH(pgeNetSocketSetSelect)
+PSP_EXPORT_END
+
+PSP_END_EXPORTS

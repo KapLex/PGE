@@ -1,0 +1,28 @@
+# Define the exports for the prx
+PSP_BEGIN_EXPORTS
+
+# These four lines are mandatory (although you can add other functions like module_stop)
+# syslib is a psynonym for the single mandatory export.
+PSP_EXPORT_START(syslib, 0, 0x8000)
+PSP_EXPORT_FUNC_HASH(module_start)
+PSP_EXPORT_VAR_HASH(module_info)
+PSP_EXPORT_END
+
+# Export our functions
+PSP_EXPORT_START(PGE System, 0, 0x0001)
+PSP_EXPORT_FUNC_HASH(pgeSystemGetNickname)
+PSP_EXPORT_FUNC_HASH(pgeSystemGetPsid)
+PSP_EXPORT_FUNC_HASH(pgeSystemGetLanguage)
+PSP_EXPORT_FUNC_HASH(pgeSystemGetMac)
+PSP_EXPORT_FUNC_HASH(pgeSystemMsSize)
+PSP_EXPORT_FUNC_HASH(pgeSystemMsFreeSize)
+PSP_EXPORT_FUNC_HASH(pgeSystemGetFreeRam)
+PSP_EXPORT_FUNC_HASH(pgeSystemSetCpu)
+PSP_EXPORT_FUNC_HASH(pgeSystemGetBatteryPercent)
+PSP_EXPORT_FUNC_HASH(pgeSystemGetBatteryTime)
+PSP_EXPORT_FUNC_HASH(pgeSystemGetBatteryCharging)
+PSP_EXPORT_FUNC_HASH(pgeSystemGetBatteryExists)
+PSP_EXPORT_FUNC_HASH(pgeSystemGetBatteryIsLow)
+PSP_EXPORT_END
+
+PSP_END_EXPORTS

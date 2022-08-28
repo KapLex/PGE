@@ -6,7 +6,7 @@ BUILD_PRX = 1
 
 PRX_EXPORTS = pgefont_exports.exp
 
-LIBS = $(shell $(PSPBIN)/bin/freetype-config --libs)
+LIBS = $(shell $(PSPBIN)/bin/freetype-config --libs) -lfreetype -lz
 LDFLAGS = -mno-crt0 -nostartfiles
 
 PSPBIN = $(shell psp-config --psp-prefix)
